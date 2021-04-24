@@ -17,10 +17,10 @@ public class CalculatorTest {
         assertThat(result, is(1L));
     }
     
-    @Test123
+    @Test
     public void threeXThreeIsNine() throws Exception {
         final long result = new Calculator().mulFucn123(3, 3);
-        assertThat(result, is(9L));
+        assertThat(result, is(18L));
     }
    
 }
