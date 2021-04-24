@@ -19,7 +19,7 @@ public class CalculatorTest {
     
     @Test
     public void threeXThreeIsNine() throws Exception {
-        final long result = new Calculator().mulFucn123(3, 3);
+        final long result = new Calculator().mulFucn(3, 3);
         assertThat(result, is(18L));
     }
    
