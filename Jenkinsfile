@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-               git 'https://github.com/sonal04devops/JavaWebCalculator.git'
+               git 'https://github.com/teja2071/JavaWebCalculator.git'
             }
         }
          stage('Compile'){
@@ -22,10 +22,6 @@ pipeline{
                
               steps{
                   sh 'mvn test'
-              }
-               post {
-               success {
-                   junit 'target/surefire-reports/*.xml'
                }
            }	
           }
